@@ -1,3 +1,4 @@
+import React from 'react'
 import { Building, DraftingCompass, HardHat, Recycle, ShieldCheck, Wrench } from 'lucide-react'
 import { WhatsAppIcon } from './WhatsAppIcon'
 
@@ -59,7 +60,7 @@ export default function Solution() {
               },
             ].map((item) => (
               <div key={item.title} className="relative p-8 rounded-2xl flex flex-col gap-6 items-start group">
-                <div className="absolute inset-0 bg-black/80 rounded-2xl -z-10" style={{ mixBlendMode: 'destination-out' }} />
+                <div className="absolute inset-0 bg-black/80 rounded-2xl -z-10" style={{ mixBlendMode: 'destination-out' as React.CSSProperties['mixBlendMode'] }} />
                 <div className="absolute inset-0 border border-brand-gold/20 rounded-2xl pointer-events-none -z-10 transition-colors group-hover:border-brand-gold/50" />
                 <div className="relative z-10 flex flex-col gap-6 w-full">
                   <div className="bg-brand-gold/10 p-4 rounded-full w-max">{item.icon}</div>
