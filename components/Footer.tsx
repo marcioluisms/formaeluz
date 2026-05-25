@@ -12,8 +12,8 @@ export default function Footer() {
     <footer className="bg-[#2A0003] text-surface/80 w-full pt-16 pb-8 border-t border-brand-gold/20">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
         <div className="md:col-span-5 flex flex-col gap-6">
-          <a href="#" aria-label="Voltar para o início" className="w-max inline-block focus:outline-none focus:ring-2 focus:ring-brand-gold rounded">
-            <img src="/decoracao-de-natal-forma-e-luz.webp" alt="Forma & Luz" className="h-12 object-contain" />
+          <a href="/" aria-label="Voltar para o início" className="w-max inline-block focus:outline-none focus:ring-2 focus:ring-brand-gold rounded">
+            <img src="/decoracao-de-natal-forma-e-luz.webp" alt="Forma & Luz" width={200} height={48} className="h-12 object-contain" />
           </a>
           <p className="font-body-md text-base leading-relaxed text-surface/90 max-w-sm">
             Decoração natalina corporativa em São Paulo. Serviço completo, do projeto à desmontagem, criando ambientes que encantam e inspiram.

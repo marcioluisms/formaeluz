@@ -65,7 +65,7 @@ export default function Solution() {
                 <div className="relative z-10 flex flex-col gap-6 w-full">
                   <div className="bg-brand-gold/10 p-4 rounded-full w-max">{item.icon}</div>
                   <div>
-                    <h4 className="font-headline-sm text-headline-sm text-surface mb-3">{item.title}</h4>
+                    <h3 className="font-headline-sm text-headline-sm text-surface mb-3">{item.title}</h3>
                     <p className="font-body-md text-body-md text-surface/90 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>

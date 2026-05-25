@@ -26,8 +26,8 @@ export default function Navbar() {
     <nav className="bg-brand-dark-green/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-brand-gold/20 shadow-sm">
       <div className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-16 relative z-50">
         <div className="flex items-center">
-          <a href="#" aria-label="Voltar para o início" onClick={closeMenu}>
-            <img src="/decoracao-de-natal-forma-e-luz.webp" alt="Forma & Luz" className="h-10 md:h-12 object-contain" />
+          <a href="/" aria-label="Voltar para o início" onClick={closeMenu}>
+            <img src="/decoracao-de-natal-forma-e-luz.webp" alt="Forma & Luz" width={200} height={48} className="h-10 md:h-12 object-contain" />
           </a>
         </div>
 

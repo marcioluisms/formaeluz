@@ -10,6 +10,12 @@ export default function Hero() {
           "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/forma-e-luz-decoracao-de-natal-capa.webp')",
       }}
     >
+      {/* Preload hint para a imagem LCP */}
+      <link
+        rel="preload"
+        as="image"
+        href="/forma-e-luz-decoracao-de-natal-capa.webp"
+      />
       <div className="max-w-container-max mx-auto w-full relative z-10 flex flex-col items-center text-center gap-8 flex-1 justify-end">
         <h1 className="font-display-lg text-display-lg text-brand-gold max-w-4xl">
           Decoração de Natal para o seu espaço.
