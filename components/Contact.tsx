@@ -1,7 +1,52 @@
+'use client'
+
+import { useState, FormEvent } from 'react'
 import { Phone, Mail, Clock } from 'lucide-react'
 import { WhatsAppIcon } from './WhatsAppIcon'
 
+const WHATSAPP_NUMBER = '5511973559896'
+
 export default function Contact() {
+  const [form, setForm] = useState({
+    Nome: '',
+    Empresa_Condominio: '',
+    Tipo_Espaco: '',
+    Cidade: '',
+    WhatsApp: '',
+    Mensagem: '',
+  })
+
+  function handleChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+  }
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+
+    const linhas = [
+      'Olá! Gostaria de solicitar um orçamento de decoração de Natal.',
+      '',
+      `*Nome:* ${form.Nome}`,
+      `*Empresa/Condomínio:* ${form.Empresa_Condominio}`,
+      `*Tipo de espaço:* ${form.Tipo_Espaco}`,
+      `*Cidade:* ${form.Cidade}`,
+      `*WhatsApp/Telefone:* ${form.WhatsApp}`,
+    ]
+
+    if (form.Mensagem.trim()) {
+      linhas.push(`*Mensagem:* ${form.Mensagem}`)
+    }
+
+    const texto = encodeURIComponent(linhas.join('\n'))
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${texto}`,
+      '_blank',
+      'noopener,noreferrer',
+    )
+  }
+
   return (
     <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-brand-dark-green relative overflow-hidden" id="orcamento">
       <div
@@ -51,11 +96,13 @@ export default function Contact() {
         </div>
 
         <div className="flex-1">
-          <form action="https://formsubmit.co/contato@formaeluz.com.br" method="POST" className="flex flex-col gap-6">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <div>
               <label className="font-label-md text-label-md text-on-surface-variant mb-1 block">Nome</label>
               <input
                 name="Nome"
+                value={form.Nome}
+                onChange={handleChange}
                 className="w-full bg-surface border-0 border-b-2 border-brand-dark-green/20 focus:border-brand-gold focus:ring-0 px-0 py-2 font-body-md text-ink placeholder-on-surface-variant/50 transition-colors outline-none"
                 placeholder="Ex: Maria Silva"
                 type="text"
@@ -66,6 +113,8 @@ export default function Contact() {
               <label className="font-label-md text-label-md text-on-surface-variant mb-1 block">Empresa/Condomínio</label>
               <input
                 name="Empresa_Condominio"
+                value={form.Empresa_Condominio}
+                onChange={handleChange}
                 className="w-full bg-surface border-0 border-b-2 border-brand-dark-green/20 focus:border-brand-gold focus:ring-0 px-0 py-2 font-body-md text-ink placeholder-on-surface-variant/50 transition-colors outline-none"
                 placeholder="Ex: Condomínio Central ou Rede XYZ"
                 type="text"
@@ -77,6 +126,8 @@ export default function Contact() {
                 <label className="font-label-md text-label-md text-on-surface-variant mb-1 block">Tipo de espaço</label>
                 <input
                   name="Tipo_Espaco"
+                  value={form.Tipo_Espaco}
+                  onChange={handleChange}
                   className="w-full bg-surface border-0 border-b-2 border-brand-dark-green/20 focus:border-brand-gold focus:ring-0 px-0 py-2 font-body-md text-ink placeholder-on-surface-variant/50 transition-colors outline-none"
                   placeholder="Condomínio / Shopping / Espaço público / Loja / Outro"
                   type="text"
@@ -87,6 +138,8 @@ export default function Contact() {
                 <label className="font-label-md text-label-md text-on-surface-variant mb-1 block">Cidade</label>
                 <input
                   name="Cidade"
+                  value={form.Cidade}
+                  onChange={handleChange}
                   className="w-full bg-surface border-0 border-b-2 border-brand-dark-green/20 focus:border-brand-gold focus:ring-0 px-0 py-2 font-body-md text-ink placeholder-on-surface-variant/50 transition-colors outline-none"
                   placeholder="Ex: São Paulo"
                   type="text"
@@ -98,6 +151,8 @@ export default function Contact() {
               <label className="font-label-md text-label-md text-on-surface-variant mb-1 block">WhatsApp/Telefone</label>
               <input
                 name="WhatsApp"
+                value={form.WhatsApp}
+                onChange={handleChange}
                 className="w-full bg-surface border-0 border-b-2 border-brand-dark-green/20 focus:border-brand-gold focus:ring-0 px-0 py-2 font-body-md text-ink placeholder-on-surface-variant/50 transition-colors outline-none"
                 placeholder="Ex: (11) 99999-9999"
                 type="tel"
@@ -108,16 +163,19 @@ export default function Contact() {
               <label className="font-label-md text-label-md text-on-surface-variant mb-1 block">Mensagem</label>
               <textarea
                 name="Mensagem"
+                value={form.Mensagem}
+                onChange={handleChange}
                 className="w-full bg-surface border-0 border-b-2 border-brand-dark-green/20 focus:border-brand-gold focus:ring-0 px-0 py-2 font-body-md text-ink placeholder-on-surface-variant/50 transition-colors resize-none outline-none"
                 placeholder="Ex: Temos um hall de entrada de 8m de pé-direito..."
                 rows={3}
               />
             </div>
             <button
-              className="bg-primary text-on-primary py-4 px-8 font-label-md text-label-md rounded hover:opacity-90 transition-opacity mt-2 cursor-pointer w-full"
+              className="bg-primary text-on-primary py-4 px-8 font-label-md text-label-md rounded hover:opacity-90 transition-opacity mt-2 cursor-pointer w-full flex items-center justify-center gap-2"
               type="submit"
             >
-              Enviar
+              <WhatsAppIcon className="w-5 h-5 shrink-0" />
+              Enviar pelo WhatsApp
             </button>
             <p className="text-sm text-center text-on-surface-variant/80 mt-2">
               Seus dados são usados apenas para entrar em contato com você. Não compartilhamos com terceiros.
