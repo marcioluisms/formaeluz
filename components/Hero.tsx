@@ -17,8 +17,8 @@ export default function Hero() {
         href="/forma-e-luz-decoracao-de-natal-capa.webp"
       />
       <div className="max-w-container-max mx-auto w-full relative z-10 flex flex-col items-center text-center gap-8 flex-1 justify-end">
-        <h1 className="font-display-lg text-display-lg text-brand-gold max-w-4xl">
-          Decoração de Natal para o seu espaço.
+        <h1 className="font-display-lg text-display-md text-brand-gold max-w-4xl">
+          Decoração de Natal para o seu espaço
         </h1>
         <p className="font-body-lg text-body-lg max-w-2xl text-surface-variant">
           Do projeto à desmontagem, sem complicação.

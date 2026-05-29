@@ -4,13 +4,19 @@
 
 @layer utilities {
   .text-display-lg {
+    font-size: clamp(32px, 5.5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  .text-display-md {
     font-size: clamp(24px, 4vw, 40px);
     line-height: 1.1;
     letter-spacing: -0.02em;
     font-weight: 600;
   }
   .text-headline-lg {
-    font-size: clamp(20px, 3vw, 32px);
+    font-size: clamp(26px, 3.8vw, 42px);
     line-height: 1.2;
     font-weight: 500;
   }
