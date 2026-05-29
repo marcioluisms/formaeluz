@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Forma & Luz | Decoração de Natal Corporativa em São Paulo',
+  title: 'Forma & Luz Concept | Decoração de Natal Corporativa em São Paulo',
   description:
     'Decoração de Natal para empresas, shoppings, condomínios e espaços públicos em São Paulo. Projeto personalizado, montagem, manutenção e desmontagem. Solicite um orçamento.',
   keywords:

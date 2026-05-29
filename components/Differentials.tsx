@@ -1,4 +1,4 @@
-import { Tractor, ShieldCheck, CalendarCheck, Clock, FileText, Leaf } from 'lucide-react'
+import { ShieldCheck, CalendarCheck, Clock } from 'lucide-react'
 
 export default function Differentials() {
   const items = [
@@ -16,21 +16,6 @@ export default function Differentials() {
       icon: <Clock className="text-brand-gold w-8 h-8" />,
       title: 'Trabalhamos quando o seu espaço permite, inclusive à noite',
       desc: 'Condomínios, shoppings e lojas têm restrições de horário. Nossa equipe adapta o cronograma para trabalhar no turno que menos interfere na operação, inclusive madrugadas e fins de semana.',
-    },
-    {
-      icon: <FileText className="text-brand-gold w-8 h-8" />,
-      title: 'Alvarás, concessionárias, órgãos públicos: nossa responsabilidade',
-      desc: 'Para projetos em vias públicas, coordenamos com a companhia de energia, secretaria de trânsito e demais órgãos envolvidos. Você não precisa entender de burocracia técnica.',
-    },
-    {
-      icon: <Leaf className="text-brand-gold w-8 h-8" />,
-      title: 'Cada planta tratada com o mesmo cuidado da decoração',
-      desc: 'Projetos em jardins, shoppings e áreas verdes exigem atenção especial. Usamos equipamentos próprios para proteger as plantas durante todo o processo. A estética e o bem-estar do espaço são preservados.',
-    },
-    {
-      icon: <Tractor className="text-brand-gold w-8 h-8" />,
-      title: 'Gruas e cestas elevatórias',
-      desc: 'Temos equipamentos para projetos em altura.',
     },
   ]
 

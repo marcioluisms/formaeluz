@@ -7,24 +7,20 @@ import { WhatsAppIcon } from './WhatsAppIcon'
 const projects = [
   { id: 1, image: '/decoracao-de-natal-para-empresas-volks.webp', alt: 'Decoração de Natal para empresa – projeto Volkswagen, Forma & Luz São Paulo' },
   { id: 2, image: '/decoracao-de-natal-forma-e-luz-arvore-1.webp', alt: 'Árvore de Natal decorativa para espaço corporativo – Forma & Luz' },
-  { id: 4, image: '/decoracao-de-natal-forma-e-luz-galeria.webp', alt: 'Decoração natalina em galeria comercial – Forma & Luz São Paulo' },
   { id: 5, image: '/decoracao-de-natal-forma-e-luz-galeria-2.webp', alt: 'Iluminação natalina em galeria comercial – projeto Forma & Luz' },
   { id: 6, image: '/decoracao-de-natal-forma-e-luz-galeria-3.webp', alt: 'Decoração de Natal em galeria – Forma & Luz decorações corporativas' },
   { id: 7, image: '/decoracao-de-natal-forma-e-luz-hotel.webp', alt: 'Decoração de Natal para hotel em São Paulo – Forma & Luz' },
   { id: 8, image: '/decoracao-de-natal-forma-e-luz-jardim.webp', alt: 'Decoração natalina em jardim corporativo – Forma & Luz São Paulo' },
-  { id: 9, image: '/decoracao-de-natal-forma-e-luz-praca.webp', alt: 'Iluminação natalina em praça pública – projeto Forma & Luz São Paulo' },
   { id: 10, image: '/decoracao-de-natal-forma-e-luz-praca-2.webp', alt: 'Decoração de Natal em praça – Forma & Luz decorações para prefeituras' },
   { id: 11, image: '/decoracao-de-natal-forma-e-luz-praca-3.webp', alt: 'Iluminação de Natal em espaço público – Forma & Luz São Paulo' },
   { id: 12, image: '/decoracao-de-natal-forma-e-luz-predio.webp', alt: 'Decoração natalina em fachada de prédio – Forma & Luz São Paulo' },
   { id: 13, image: '/decoracao-de-natal-forma-e-luz-presente-1.webp', alt: 'Enfeites e presentes natalinos decorativos para empresa – Forma & Luz' },
   { id: 14, image: '/decoracao-de-natal-forma-e-luz-tunel-1.webp', alt: 'Túnel de luz natalino para espaço corporativo – Forma & Luz São Paulo' },
-  { id: 15, image: '/decoracao-de-natal-forma-e-luz-comercial-11.webp', alt: 'Decoração de Natal para espaço comercial – Forma & Luz São Paulo' },
   { id: 16, image: '/decoracao-de-natal-forma-e-luz-condominio-11.webp', alt: 'Decoração natalina para condomínio comercial – Forma & Luz São Paulo' },
   { id: 17, image: '/decoracao-de-natal-forma-e-luz-empresa-11.webp', alt: 'Decoração de Natal para empresa corporativa – Forma & Luz São Paulo' },
   { id: 18, image: '/decoracao-de-natal-forma-e-luz-empresa-12.webp', alt: 'Projeto natalino corporativo em empresa – Forma & Luz São Paulo' },
   { id: 19, image: '/decoracao-de-natal-forma-e-luz-empresa-13.webp', alt: 'Iluminação de Natal para empresa em São Paulo – Forma & Luz' },
   { id: 20, image: '/decoracao-de-natal-forma-e-luz-empresa-14.webp', alt: 'Decoração natalina corporativa completa – Forma & Luz São Paulo' },
-  { id: 21, image: '/decoracao-de-natal-forma-e-luz-empresa-15.webp', alt: 'Cenário natalino para empresa – projeto Forma & Luz São Paulo' },
   { id: 22, image: '/decoracao-de-natal-forma-e-luz-mackenzie.webp', alt: 'Decoração de Natal Universidade Mackenzie – projeto Forma & Luz São Paulo' },
   { id: 23, image: '/decoracao-de-natal-forma-e-luz-netflix.webp', alt: 'Decoração de Natal Netflix Brasil – projeto Forma & Luz São Paulo' },
   { id: 24, image: '/decoracao-de-natal-forma-e-luz-parque-1.webp', alt: 'Decoração natalina em parque – Forma & Luz São Paulo' },
@@ -68,7 +64,7 @@ export default function Portfolio() {
         <div className="text-center mb-16">
           <h2 className="font-headline-lg text-headline-lg text-surface mb-6">Nossos projetos falam por si.</h2>
           <p className="font-body-lg text-body-lg text-surface/80 max-w-2xl mx-auto">
-            Projetos executados pela equipe Forma &amp; Luz, da visita técnica à entrega final.
+            Projetos executados pela equipe Forma &amp; Luz Concept, da visita técnica à entrega final.
           </p>
         </div>
 

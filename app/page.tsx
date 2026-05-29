@@ -6,7 +6,6 @@ import Segments from '@/components/Segments'
 import Portfolio from '@/components/Portfolio'
 import Differentials from '@/components/Differentials'
 import Clients from '@/components/Clients'
-import HowItWorks from '@/components/HowItWorks'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -22,7 +21,6 @@ export default function Home() {
         <Portfolio />
         <Differentials />
         <Clients />
-        <HowItWorks />
         <Contact />
       </main>
       <Footer />

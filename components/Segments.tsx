@@ -15,13 +15,6 @@ export default function Segments() {
       desc: 'Entendemos que o shopping tem um padrão. E que a janela de montagem é pequena.\n\nChegamos com cronograma fechado, equipe dimensionada e equipamentos adequados. Trabalhamos na madrugada quando necessário, sem atrasar a abertura das lojas. E cuidamos de cada planta e área verde como se fosse nossa.',
     },
     {
-      tag: 'Prefeituras e Espaços Públicos',
-      image: '/decoracao-de-natal-forma-e-luz-praca-16.webp',
-      alt: 'Iluminação natalina em rua e praça pública São Paulo, Forma & Luz',
-      title: 'Decoração natalina para ruas, praças e espaços públicos',
-      desc: 'Projetos em espaços públicos envolvem companhia de energia, secretaria de trânsito e prefeitura. Coordenamos todas essas etapas: você assina o contrato conosco e a burocracia técnica fica por nossa conta.\n\nNossa equipe tem experiência em iluminação de grande escala com total segurança e legalidade.',
-    },
-    {
       tag: 'Redes de Lojas e Franquias',
       image: '/forma-e-luz-decoracao-de-natal-lojas.webp',
       alt: 'Decoração de Natal para rede de lojas e franquias São Paulo, Forma & Luz',
