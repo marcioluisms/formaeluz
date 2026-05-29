@@ -48,7 +48,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-brand-dark-green relative overflow-hidden" id="orcamento">
+    <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-[#697e6b] relative overflow-hidden" id="orcamento">
       <div
         className="absolute inset-0 opacity-5"
         style={{
